@@ -1,8 +1,20 @@
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+
 function App() {
   return (
-    <main>
-      <h1 className="text-4xl font-bold text-blue-500">My Portfolio</h1>
-    </main>
+    <>
+      <Navbar />
+      <main className="pt-16">
+        <Hero />
+        <section id="about">About</section>
+        <section id="experience">Experience</section>
+        <section id="leadership">Leadership</section>
+        <section id="projects">Projects</section>
+        <section id="skills">Skills</section>
+        <section id="contact">Contact</section>
+      </main>
+    </>
   )
 }
 
