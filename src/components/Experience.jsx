@@ -42,7 +42,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-24">
-      <p className="text-gray-500 text-base tracking-widest uppercase mb-3">My Journey</p>
+      <p className="text-gray-500 text-lg tracking-widest uppercase mb-3">My Journey</p>
       <h2 className="text-2xl font-black mb-4">Experience<span className="text-orange-400">.</span></h2>
       <p className="text-gray-500 text-sm mb-8">My professional journey</p>
 
@@ -61,7 +61,7 @@ export default function Experience() {
                 <p className="text-gray-600 text-sm mb-5">{exp.location}</p>
                 <ul className="flex flex-col gap-3 mb-7">
                   {exp.bullets.map((b, j) => (
-                    <li key={j} className="text-gray-400 text-sm flex gap-2">
+                    <li key={j} className="text-gray-400 text-lg flex gap-2">
                       <span className="text-orange-400 mt-1">·</span>
                       {b}
                     </li>

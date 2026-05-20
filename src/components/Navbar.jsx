@@ -23,7 +23,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 w-full z-50 flex justify-center py-4">
+    <nav className="fixed top-0 w-full z-50 flex justify-center py-2">
       <div className="flex items-center gap-1 bg-[#111111] border border-gray-800 rounded-2xl px-4 py-2">
 
         <span className="font-bold text-white text-base mr-4 px-2">

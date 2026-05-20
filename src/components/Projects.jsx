@@ -79,7 +79,7 @@ const ProjectCard = ({ project, featured }) => (
   <div className={`bg-white/5 backdrop-blur-sm border rounded-2xl overflow-hidden flex flex-col hover:-translate-y-1 transition-all ${
     featured ? 'border-orange-400/20 hover:border-orange-400/50' : 'border-white/10 hover:border-orange-400/30'
   }`}>
-    <div className="bg-[#1a1a1a] h-72 flex items-center justify-center overflow-hidden">
+    <div className="bg-[#1a1a1a] h-60 flex items-center justify-center overflow-hidden">
       {project.image ? (
         <img
           src={project.image}
@@ -136,7 +136,7 @@ export default function Projects() {
   const others = projects.filter(p => !p.pinned)
 
   return (
-    <section id="projects" className="py-16 px-6 max-w-7xl mx-auto scroll-mt-24">
+    <section id="projects" className="py-12 px-1 max-w-6xl mx-auto scroll-mt-24">
       <p className="text-gray-500 text-base tracking-widest uppercase mb-3">What I've Built</p>
       <h2 className="text-2xl font-black mb-4">Projects<span className="text-orange-400">.</span></h2>
       <p className="text-gray-500 text-sm mb-8">A mix of hackathon wins, personal projects, and everything in between</p>

@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-16">
+      <main className="pt-12">
         <Hero />
         <About />
         <Experience />

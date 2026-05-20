@@ -30,43 +30,43 @@ export default function About() {
 
   return (
     <section id="about" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-24">
-      <p className="text-gray-500 text-base tracking-widest uppercase mb-3">Who I Am</p>
-      <h2 className="text-2xl font-black mb-8">About Me</h2>
+      <p className="text-gray-500 text-xs tracking-widest uppercase mb-2">Who I Am</p>
+      <h2 className="text-3xl font-black mb-10">About Me</h2>
 
       <div className="grid grid-cols-2 gap-6 mb-6">
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-          <p className="text-gray-500 text-sm tracking-widest uppercase mb-6">/ Bio</p>
-          <p className="text-gray-300 leading-relaxed text-sm">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+          <p className="text-gray-500 text-xs tracking-widest uppercase mb-4">/ Bio</p>
+          <p className="text-gray-400 leading-relaxed text-base">
             Hi, my name is{' '}
             <span className="text-white font-bold">Zainab</span>. I'm a{' '}
-            <span className="text-orange-400 font-semibold">Computer Science student</span>
+            <span className="text-white font-bold">Computer Science student</span>
             {' '}at York University with a passion for{' '}
-            <span className="text-orange-400 font-semibold">full stack development</span>
+            <span className="text-white font-bold">full stack development</span>
             {' '}and{' '}
-            <span className="text-orange-400 font-semibold">artificial intelligence</span>
+            <span className="text-white font-bold">artificial intelligence</span>
             . I've built{' '}
             <span className="text-white font-bold">award-winning projects</span>
             , won{' '}
             <span className="text-white font-bold">hackathons</span>
             , and worked across several different tech stacks. I believe the best developers aren't just coders but are{' '}
-            <span className="text-orange-400 font-semibold">problem solvers</span>
+            <span className="text-white font-bold">problem solvers</span>
             ,{' '}
-            <span className="text-orange-400 font-semibold">communicators</span>
+            <span className="text-white font-bold">communicators</span>
             , and{' '}
-            <span className="text-orange-400 font-semibold">builders</span>
+            <span className="text-white font-bold">builders</span>
             . I'm constantly learning, constantly building, and constantly pushing myself to create software that delivers{' '}
             <span className="text-white font-bold">real impact</span>
             . Currently seeking{' '}
-            <span className="text-orange-400 font-semibold">internship opportunities</span>
+            <span className="text-white font-bold">internship opportunities</span>
             {' '}to bring my skills to a team that's building something meaningful.
           </p>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-          <p className="text-gray-500 text-sm tracking-widest uppercase mb-6">/ Quick Facts</p>
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+          <p className="text-gray-500 text-xs tracking-widest uppercase mb-4">/ Quick Facts</p>
           <ul className="flex flex-col gap-5">
             {bullets.map((b, i) => (
-              <li key={i} className="text-gray-300 text-sm">{b}</li>
+              <li key={i} className="text-gray-300 text-base">{b}</li>
             ))}
           </ul>
         </div>
@@ -74,9 +74,9 @@ export default function About() {
 
       <div className="grid grid-cols-3 gap-6">
         {cards.map((card) => (
-          <div key={card.title} className={`backdrop-blur-sm border rounded-2xl p-6 ${card.color}`}>
-            <p className={`text-sm tracking-widest uppercase font-semibold mb-4 ${card.text}`}>{card.title}</p>
-            <p className="text-gray-300 text-sm">{card.desc}</p>
+          <div key={card.title} className={`backdrop-blur-sm border rounded-2xl p-8 ${card.color}`}>
+            <p className={`text-xs tracking-widest uppercase font-semibold mb-3 ${card.text}`}>{card.title}</p>
+            <p className="text-gray-300 text-base">{card.desc}</p>
           </div>
         ))}
       </div>
