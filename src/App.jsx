@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Experience from './components/Experience'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main className="pt-16">
         <Hero />
         <About />
+        <Experience />
         <section id="experience">Experience</section>
         <section id="leadership">Leadership</section>
         <section id="projects">Projects</section>
