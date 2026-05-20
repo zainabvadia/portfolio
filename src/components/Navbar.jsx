@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 export default function Navbar() {
-  const sections = ['about', 'experience', 'leadership', 'projects', 'skills', 'contact']
+const sections = ['about', 'experience', 'leadership', 'projects', 'skills', 'education', 'contact']
   const [active, setActive] = useState('about')
 
   useEffect(() => {
