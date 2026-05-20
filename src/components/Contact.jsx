@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaFileAlt } from 'rea
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 scroll-mt-24">
+    <section id="contact" className="py-16 px-6 scroll-mt-24">
       
       <div className="max-w-2xl mx-auto text-center">
 
@@ -10,23 +10,23 @@ export default function Contact() {
           Get in Touch
         </p>
 
-        <h2 className="text-6xl font-black mb-4">
+        <h2 className="text-2xl font-black mb-4">
           Let's Talk<span className="text-orange-400">.</span>
         </h2>
 
-        <p className="text-gray-400 text-xl mb-12">
+        <p className="text-gray-400 text-xl mb-6">
           Have a project in mind or just want to say hello?
         </p>
 
         {/* Contact info */}
         <div className="flex flex-col items-center gap-4 mb-10">
 
-          <div className="flex items-center gap-3 text-gray-300 text-lg">
+          <div className="flex items-center gap-3 text-gray-300 text-sm">
             <FaEnvelope className="text-orange-400" size={20} />
             <span>zmvadia@my.yorku.ca</span>
           </div>
 
-          <div className="flex items-center gap-3 text-gray-300 text-lg">
+          <div className="flex items-center gap-3 text-gray-300 text-sm">
             <FaMapMarkerAlt className="text-orange-400" size={20} />
             <span>Toronto, ON · Canada</span>
           </div>
@@ -34,7 +34,7 @@ export default function Contact() {
         </div>
 
         {/* Social buttons */}
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex justify-center gap-4 mb-6">
 
           <a
             href="https://github.com/zainabvadia"
@@ -59,9 +59,9 @@ export default function Contact() {
         </div>
 
         {/* Resume card */}
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-10 mb-8 text-center">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 mb-8 text-center">
 
-          <h3 className="text-white font-black text-2xl mb-3">
+          <h3 className="text-white font-black text-xl mb-3">
             Want to know more?
           </h3>
 
@@ -82,7 +82,7 @@ export default function Contact() {
         </div>
 
         {/* Message form */}
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-10 mb-12 text-left">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 mb-6 text-left">
 
           <p className="text-white font-semibold text-xl mb-6">
             Send a Message
@@ -123,44 +123,23 @@ export default function Contact() {
       </div>
 
       {/* Footer */}
-      <div className="border-t border-white/10 pt-8 px-12 flex justify-between items-center w-full">
-
-        <div className="flex items-center gap-2 text-gray-600 text-sm">
-          <span>·</span>
-          <span>© 2026 Zainab Vadia. All rights reserved.</span>
+        <div className="border-t border-white/10 mt-24 pt-8 flex justify-between items-center" style={{width: '100vw', marginLeft: 'calc(-50vw + 50%)'}}>
+        <div className="flex items-center gap-2 text-gray-500 text-base">
+            <span>·</span>
+            <span>© 2026 Zainab Vadia. All rights reserved.</span>
         </div>
-
         <div className="flex gap-6 items-center">
-
-          <a
-            href="mailto:zmvadia@my.yorku.ca"
-            className="text-gray-600 hover:text-white transition-colors"
-          >
-            <FaEnvelope size={16} />
-          </a>
-
-          <a
-            href="https://linkedin.com/in/zainabvadia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-white transition-colors"
-          >
-            <FaLinkedin size={16} />
-          </a>
-
-          <a
-            href="https://github.com/zainabvadia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-white transition-colors"
-          >
-            <FaGithub size={16} />
-          </a>
-
+            <a href="mailto:zmvadia@my.yorku.ca" className="text-gray-500 hover:text-white transition-colors">
+            <FaEnvelope size={18} />
+            </a>
+            <a href="https://linkedin.com/in/zainabvadia" target="_blank" className="text-gray-500 hover:text-white transition-colors">
+            <FaLinkedin size={18} />
+            </a>
+            <a href="https://github.com/zainabvadia" target="_blank" className="text-gray-500 hover:text-white transition-colors">
+            <FaGithub size={18} />
+            </a>
         </div>
-
-      </div>
-
+        </div>
     </section>
   )
 }

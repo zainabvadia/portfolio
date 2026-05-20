@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 export default function Navbar() {
-const sections = ['about', 'experience', 'leadership', 'projects', 'skills', 'education', 'contact']
+  const sections = ['about', 'experience', 'leadership', 'projects', 'skills', 'education', 'contact']
   const [active, setActive] = useState('about')
 
   useEffect(() => {
@@ -23,10 +23,10 @@ const sections = ['about', 'experience', 'leadership', 'projects', 'skills', 'ed
   }
 
   return (
-    <nav className="fixed top-0 w-full z-50 flex justify-center py-6">
-      <div className="flex items-center gap-3 bg-[#111111] border border-gray-800 rounded-2xl px-8 py-4">
+    <nav className="fixed top-0 w-full z-50 flex justify-center py-4">
+      <div className="flex items-center gap-1 bg-[#111111] border border-gray-800 rounded-2xl px-4 py-2">
 
-        <span className="font-black text-white text-2xl mr-8 px-2">
+        <span className="font-bold text-white text-base mr-4 px-2">
           <span className="text-orange-400">&lt;</span>
           Zainab
           <span className="text-orange-400"> /&gt;</span>
@@ -36,9 +36,9 @@ const sections = ['about', 'experience', 'leadership', 'projects', 'skills', 'ed
           <button
             key={s}
             onClick={() => scrollTo(s)}
-            className={`px-6 py-3 rounded-xl text-base font-semibold capitalize transition-all ${
+            className={`px-3 py-2 rounded-xl text-sm font-medium capitalize transition-all ${
               active === s
-                ? 'bg-[#1a1a2a] text-white border border-orange-900'
+                ? 'bg-[#1a1a0a] text-white border border-orange-900'
                 : 'text-gray-400 hover:text-white'
             }`}
           >
@@ -49,7 +49,8 @@ const sections = ['about', 'experience', 'leadership', 'projects', 'skills', 'ed
         <a
           href="/resume.pdf"
           target="_blank"
-          className="ml-8 px-6 py-3 text-base font-semibold text-orange-400 hover:text-orange-300 transition-colors"
+          rel="noopener noreferrer"
+          className="ml-4 px-3 py-2 text-sm font-medium text-orange-400 hover:text-orange-300 transition-colors"
         >
           Resume
         </a>

@@ -87,16 +87,16 @@ const ProjectCard = ({ project, featured }) => (
           className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
         />
       ) : (
-        <span className="text-6xl font-black text-gray-700">{project.title[0]}</span>
+        <span className="text-2xl font-black text-gray-700">{project.title[0]}</span>
       )}
     </div>
 
-    <div className="p-8 flex flex-col flex-grow">
+    <div className="p-5 flex flex-col flex-grow">
       {project.award && (
         <span className="text-sm text-orange-400 font-semibold mb-3">{project.award}</span>
       )}
 
-      <h3 className="text-white font-bold text-2xl mb-3">{project.title}</h3>
+      <h3 className="text-white font-bold text-xl mb-3">{project.title}</h3>
       <p className="text-gray-400 text-base leading-relaxed mb-6 flex-grow">{project.desc}</p>
 
       <div className="flex flex-wrap gap-2 mb-6">
@@ -136,17 +136,17 @@ export default function Projects() {
   const others = projects.filter(p => !p.pinned)
 
   return (
-    <section id="projects" className="py-24 px-6 max-w-7xl mx-auto scroll-mt-24">
+    <section id="projects" className="py-16 px-6 max-w-7xl mx-auto scroll-mt-24">
       <p className="text-gray-500 text-base tracking-widest uppercase mb-3">What I've Built</p>
-      <h2 className="text-6xl font-black mb-4">Projects<span className="text-orange-400">.</span></h2>
-      <p className="text-gray-500 text-lg mb-16">A mix of hackathon wins, personal projects, and everything in between</p>
+      <h2 className="text-2xl font-black mb-4">Projects<span className="text-orange-400">.</span></h2>
+      <p className="text-gray-500 text-sm mb-8">A mix of hackathon wins, personal projects, and everything in between</p>
 
       <div className="flex items-center gap-3 mb-8">
         <FaThumbtack className="text-orange-400" size={16} />
         <p className="text-orange-400 text-sm tracking-widest uppercase font-semibold">Featured</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-20">
         {pinned.map(p => <ProjectCard key={p.title} project={p} featured={true} />)}
       </div>
 
@@ -154,7 +154,7 @@ export default function Projects() {
         <p className="text-gray-500 text-sm tracking-widest uppercase font-semibold">Other Projects</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {others.map(p => <ProjectCard key={p.title} project={p} featured={false} />)}
       </div>
     </section>

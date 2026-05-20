@@ -7,3 +7,7 @@ body {
                     linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px);
   background-size: 40px 40px;
 }
+html {
+  font-size: 14px;
+  overflow-y: scroll;
+}

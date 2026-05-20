@@ -82,9 +82,9 @@ export default function Skills() {
   const categoryLabel = categories.find(c => c.id === activeCategory)?.label || 'All'
 
   return (
-    <section id="skills" className="py-24 px-6 max-w-7xl mx-auto scroll-mt-24">
+    <section id="skills" className="py-16 px-6 max-w-7xl mx-auto scroll-mt-24">
       <p className="text-gray-500 text-base tracking-widest uppercase mb-3">What I Know</p>
-      <h2 className="text-6xl font-black mb-16">Skills<span className="text-orange-400">.</span></h2>
+      <h2 className="text-2xl font-black mb-8">Skills<span className="text-orange-400">.</span></h2>
 
       {/* Mac window wrapper */}
       <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden">
@@ -125,14 +125,14 @@ export default function Skills() {
           </div>
 
           {/* Main content */}
-          <div className="flex-1 p-8 overflow-auto">
-            <h3 className="text-white text-3xl font-bold mb-6 pb-4 border-b border-white/10">{categoryLabel}</h3>
+          <div className="flex-1 p-5 overflow-auto">
+            <h3 className="text-white text-2xl font-bold mb-6 pb-4 border-b border-white/10">{categoryLabel}</h3>
 
             {/* Featured skill */}
             {featured && (
               <div className="mb-8">
                 <p className="text-orange-400 text-sm font-semibold mb-2">{categoryLabel} Favorite</p>
-                <h4 className="text-white text-2xl font-bold mb-1">{featured.name}</h4>
+                <h4 className="text-white text-xl font-bold mb-1">{featured.name}</h4>
                 <p className="text-gray-500 text-sm mb-4">{featured.desc}</p>
                 <div className={`bg-gradient-to-br ${featured.color} rounded-xl h-40 flex items-center justify-center`}>
                   <div className="text-white opacity-80 scale-150">
