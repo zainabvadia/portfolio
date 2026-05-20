@@ -10,7 +10,7 @@ const sections = ['about', 'experience', 'leadership', 'projects', 'skills', 'ed
       if (!el) return null
       const observer = new IntersectionObserver(
         ([entry]) => { if (entry.isIntersecting) setActive(id) },
-        { threshold: 0.5 }
+        { rootMargin: '-20% 0px -70% 0px', threshold: 0 }
       )
       observer.observe(el)
       return observer
