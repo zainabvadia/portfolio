@@ -2,6 +2,8 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
+import Leadership from './components/Leadership'
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -11,11 +13,8 @@ function App() {
         <Hero />
         <About />
         <Experience />
-        <section id="experience">Experience</section>
-        <section id="leadership">Leadership</section>
-        <section id="projects">Projects</section>
-        <section id="skills">Skills</section>
-        <section id="contact">Contact</section>
+        <Leadership />
+        <Projects />
       </main>
     </>
   )
