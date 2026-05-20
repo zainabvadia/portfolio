@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import About from './components/About'
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <Navbar />
       <main className="pt-16">
         <Hero />
-        <section id="about">About</section>
+        <About />
         <section id="experience">Experience</section>
         <section id="leadership">Leadership</section>
         <section id="projects">Projects</section>
