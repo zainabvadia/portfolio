@@ -79,7 +79,7 @@ const ProjectCard = ({ project, featured }) => (
   <div className={`bg-white/5 backdrop-blur-sm border rounded-2xl overflow-hidden flex flex-col hover:-translate-y-1 transition-all ${
     featured ? 'border-orange-400/20 hover:border-orange-400/50' : 'border-white/10 hover:border-orange-400/30'
   }`}>
-    <div className="bg-[#1a1a1a] h-64 flex items-center justify-center overflow-hidden">
+    <div className="bg-[#1a1a1a] h-72 flex items-center justify-center overflow-hidden">
       {project.image ? (
         <img
           src={project.image}
