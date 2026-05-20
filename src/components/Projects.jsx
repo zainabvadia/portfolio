@@ -21,7 +21,7 @@ const projects = [
     live: 'https://justtalk-phi.vercel.app/',
     youtube: null,
     devpost: 'https://devpost.com/software/just-talk-o9jm4n',
-    image: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/227/666/datas/medium.png',
+    image: '/images/just_talk.png',
     pinned: true,
     award: '🏆 Best Use of DigitalOcean — ElleHacks'
   },
