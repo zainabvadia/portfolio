@@ -1,12 +1,16 @@
 export default function Experience() {
   const experiences = [
-    {
-      title: 'Incoming AI Automation Extern',
-      company: 'Wayfair',
-      date: 'Summer 2026',
+   {
+      title: 'AI/ML Extern',
+      company: 'Extern x Pfizer',
+      date: 'May 2026 – Present',
       location: 'Remote',
-      bullets: ['Incoming extern — details to be updated soon'],
-      tags: ['AI', 'Automation', 'n8n']
+      bullets: [
+        'Developing an AI-powered document intelligence system using Python, OCR, and LLMs to automate extraction and classification of pharmaceutical compliance documents',
+        'Building a RAG-based smart search system integrating open-source AI models to enable instant retrieval across thousands of compliance documents',
+        'Implementing automated document routing and a chatbot interface using NLP to streamline Pfizer supply chain documentation workflows'
+      ],
+      tags: ['Python', 'OCR', 'LLMs', 'RAG', 'NLP', 'Google Colab', 'LlamaIndex']
     },
     {
       title: 'Back End / Front End Developer',
@@ -15,17 +19,6 @@ export default function Experience() {
       location: 'Toronto, ON · On-site',
       bullets: ['Recently joined — contributing to frontend and backend development initiatives'],
       tags: ['React', 'Node.js', 'JavaScript']
-    },
-    {
-      title: 'Software Developer',
-      company: 'YU Blueprint',
-      date: 'May 2026 – Present',
-      location: 'Toronto, ON',
-      bullets: [
-        'Contributed to a scalable distributed backend system built with Django, Spring Boot, and Docker, improving data management efficiency for a nonprofit platform',
-        'Implemented PostgreSQL and Redis to enable asynchronous event-driven processing, supporting near real-time data flow between services and an analytics engine'
-      ],
-      tags: ['Django', 'Spring Boot', 'Docker', 'PostgreSQL', 'Redis']
     },
     {
       title: 'IT Support & Management Associate',

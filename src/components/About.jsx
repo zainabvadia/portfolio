@@ -21,10 +21,10 @@ export default function About() {
   ]
 
   const bullets = [
-    '📚 Currently: Building more projects · diving deeper into AI · grinding LeetCode',
+    '📚 Currently: Building more projects · diving deeper into AI · trying to grind more LeetCode',
     '🎯 Goals: Land an internship · build more projects · read more · discover new passions',
     '🎮 Hobbies: Reading · binge watching shows & movies',
-    '⚡ Fun Fact: I\'ve read over 100 books and can do a surprising amount of mental math',
+    '⚡ Fun Fact: I\'ve read over 210 books and can do a surprising amount of mental math',
     '✅ Availability: Open to Fall 2026 internships'
   ]
 
