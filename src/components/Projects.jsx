@@ -77,7 +77,7 @@ const projects = [
 
 const ProjectCard = ({ project, featured }) => (
   <div className={`bg-white/5 backdrop-blur-sm border rounded-2xl overflow-hidden flex flex-col hover:-translate-y-1 transition-all ${
-    featured ? 'border-orange-400/20 hover:border-orange-400/50' : 'border-white/10 hover:border-orange-400/30'
+    featured ? 'border-cyan-400/20 hover:border-cyan-400/50' : 'border-white/10 hover:border-cyan-400/30'
   }`}>
     <div className="bg-[#1a1a1a] h-60 flex items-center justify-center overflow-hidden">
       {project.image ? (
@@ -93,7 +93,7 @@ const ProjectCard = ({ project, featured }) => (
 
     <div className="p-5 flex flex-col flex-grow">
       {project.award && (
-        <span className="text-sm text-orange-400 font-semibold mb-3">{project.award}</span>
+        <span className="text-sm text-cyan-400 font-semibold mb-3">{project.award}</span>
       )}
 
       <h3 className="text-white font-bold text-xl mb-3">{project.title}</h3>
@@ -112,7 +112,7 @@ const ProjectCard = ({ project, featured }) => (
           </a>
         )}
         {project.live && (
-          <a href={project.live} target="_blank" className="text-gray-500 hover:text-orange-400 transition-colors" title="Live Demo">
+          <a href={project.live} target="_blank" className="text-gray-500 hover:text-cyan-400 transition-colors" title="Live Demo">
             <FaExternalLinkAlt size={20} />
           </a>
         )}
@@ -138,12 +138,12 @@ export default function Projects() {
   return (
     <section id="projects" className="py-12 px-1 max-w-6xl mx-auto scroll-mt-24">
       <p className="text-gray-500 text-base tracking-widest uppercase mb-3">What I've Built</p>
-      <h2 className="text-2xl font-black mb-4">Projects<span className="text-orange-400">.</span></h2>
+      <h2 className="text-2xl font-black mb-4">Projects<span className="text-cyan-400">.</span></h2>
       <p className="text-gray-500 text-sm mb-8">A mix of hackathon wins, personal projects, and everything in between</p>
 
       <div className="flex items-center gap-3 mb-8">
-        <FaThumbtack className="text-orange-400" size={16} />
-        <p className="text-orange-400 text-sm tracking-widest uppercase font-semibold">Featured</p>
+        <FaThumbtack className="text-cyan-400" size={16} />
+        <p className="text-cyan-400 text-sm tracking-widest uppercase font-semibold">Featured</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-20">

@@ -11,7 +11,7 @@ export default function Contact() {
         </p>
 
         <h2 className="text-2xl font-black mb-4">
-          Let's Talk<span className="text-orange-400">.</span>
+          Let's Talk<span className="text-cyan-400">.</span>
         </h2>
 
         <p className="text-gray-400 text-xl mb-6">
@@ -22,12 +22,12 @@ export default function Contact() {
         <div className="flex flex-col items-center gap-4 mb-10">
 
           <div className="flex items-center gap-3 text-gray-300 text-sm">
-            <FaEnvelope className="text-orange-400" size={20} />
+            <FaEnvelope className="text-cyan-400" size={20} />
             <span>zmvadia@my.yorku.ca</span>
           </div>
 
           <div className="flex items-center gap-3 text-gray-300 text-sm">
-            <FaMapMarkerAlt className="text-orange-400" size={20} />
+            <FaMapMarkerAlt className="text-cyan-400" size={20} />
             <span>Toronto, ON · Canada</span>
           </div>
 
@@ -73,7 +73,7 @@ export default function Contact() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-orange-400/50 text-orange-400 hover:bg-orange-400/10 px-8 py-3 rounded-xl font-semibold transition-colors"
+            className="inline-flex items-center gap-2 border border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 px-8 py-3 rounded-xl font-semibold transition-colors"
           >
             <FaFileAlt size={16} />
             View Resume
@@ -93,28 +93,28 @@ export default function Contact() {
             <input
               type="text"
               placeholder="Your Name"
-              className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-base placeholder-gray-600 focus:outline-none focus:border-orange-400/50 transition-colors"
+              className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-base placeholder-gray-600 focus:outline-none focus:border-cyan-400/50 transition-colors"
             />
 
             <input
               type="email"
               placeholder="Your Email"
-              className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-base placeholder-gray-600 focus:outline-none focus:border-orange-400/50 transition-colors"
+              className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-base placeholder-gray-600 focus:outline-none focus:border-cyan-400/50 transition-colors"
             />
 
             <textarea
               rows={5}
               placeholder="Your Message"
-              className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-base placeholder-gray-600 focus:outline-none focus:border-orange-400/50 transition-colors resize-none"
+              className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-base placeholder-gray-600 focus:outline-none focus:border-cyan-400/50 transition-colors resize-none"
             />
 
             <a
-              href="mailto:zmvadia@my.yorku.ca"
-              className="bg-orange-500 hover:bg-orange-400 text-white font-semibold py-4 rounded-xl transition-colors flex items-center justify-center gap-2 text-base"
-            >
-              <FaEnvelope size={18} />
-              Send me an email
-            </a>
+                href="mailto:zmvadia@my.yorku.ca"
+                className="text-white font-semibold py-4 rounded-xl transition-all flex items-center justify-center gap-2 text-base hover:opacity-90"
+                style={{ background: 'linear-gradient(135deg, #06b6d4, #8b5cf6)' }}
+              >
+                <FaEnvelope size={18} /> Send me an email
+              </a>
 
           </div>
 

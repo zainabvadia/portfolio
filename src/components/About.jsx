@@ -4,7 +4,7 @@ export default function About() {
       title: 'Build', 
       desc: 'From idea to deployment, end to end',
       color: 'border-orange-500/30 bg-orange-500/10',
-      text: 'text-orange-400'
+      text: 'text-cyan-400'
     },
     { 
       title: 'Learn', 

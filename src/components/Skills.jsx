@@ -28,7 +28,7 @@ const skills = [
   { name: 'Python', desc: 'Used for data analysis, AI pipelines, and backend services', icon: <FaPython size={24} color="#3776ab" />, category: 'languages', color: 'from-blue-500 to-blue-700' },
   { name: 'Java', desc: 'Primary language for backend development with Spring Boot', icon: <FaJava size={24} color="#f89820" />, category: 'languages', color: 'from-orange-500 to-orange-700' },
   { name: 'C/C++', desc: 'Systems programming and algorithm implementation', icon: <SiCplusplus size={24} color="#00599c" />, category: 'languages', color: 'from-blue-600 to-blue-800' },
-  { name: 'HTML/CSS', desc: 'Markup and styling for modern web interfaces', icon: <FaHtml5 size={24} color="#e34f26" />, category: 'languages', color: 'from-orange-400 to-orange-600' },
+  { name: 'HTML/CSS', desc: 'Markup and styling for modern web interfaces', icon: <FaHtml5 size={24} color="#e34f26" />, category: 'languages', color: 'from-cyan-400 to-orange-600' },
   { name: 'Dart', desc: 'Primary language for Flutter mobile development', icon: <SiDart size={24} color="#0175c2" />, category: 'languages', color: 'from-blue-400 to-blue-600' },
   { name: 'SQL', desc: 'Database querying and management across multiple systems', icon: <FaDatabase size={24} color="#336791" />, category: 'languages', color: 'from-gray-500 to-gray-700' },
 
@@ -64,11 +64,11 @@ const skills = [
 
   // Soft Skills
   { name: 'Communication', desc: 'Clear written and verbal communication across teams', icon: <FaComments size={24} color="#a855f7" />, category: 'soft', color: 'from-purple-500 to-purple-700', favorite: true },
-  { name: 'Leadership', desc: 'Leading teams, directing initiatives, and driving results', icon: <FaUsers size={24} color="#f97316" />, category: 'soft', color: 'from-orange-400 to-orange-600' },
+  { name: 'Leadership', desc: 'Leading teams, directing initiatives, and driving results', icon: <FaUsers size={24} color="#f97316" />, category: 'soft', color: 'from-cyan-400 to-orange-600' },
   { name: 'Problem Solving', desc: 'Breaking down complex problems into workable solutions', icon: <FaLightbulb size={24} color="#eab308" />, category: 'soft', color: 'from-yellow-400 to-yellow-600' },
   { name: 'Time Management', desc: 'Balancing academics, projects, and extracurriculars effectively', icon: <FaClock size={24} color="#22c55e" />, category: 'soft', color: 'from-green-400 to-green-600' },
   { name: 'Teamwork', desc: 'Collaborating across hackathons, clubs, and class projects', icon: <FaUsers size={24} color="#38bdf8" />, category: 'soft', color: 'from-sky-400 to-sky-600' },
-  { name: 'Adaptability', desc: 'Quickly picking up new stacks, tools, and environments', icon: <FaLightbulb size={24} color="#fb923c" />, category: 'soft', color: 'from-orange-300 to-orange-500' },
+  { name: 'Adaptability', desc: 'Quickly picking up new stacks, tools, and environments', icon: <FaLightbulb size={24} color="#fb923c" />, category: 'soft', color: 'from-violet-300 to-orange-500' },
 ]
 
 export default function Skills() {
@@ -84,7 +84,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-16 px-6 max-w-7xl mx-auto scroll-mt-24">
       <p className="text-gray-500 text-base tracking-widest uppercase mb-3">What I Know</p>
-      <h2 className="text-2xl font-black mb-8">Skills<span className="text-orange-400">.</span></h2>
+      <h2 className="text-3xl font-black mb-8">Skills<span className="text-cyan-400">.</span></h2>
 
       {/* Mac window wrapper */}
       <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden">
@@ -113,7 +113,7 @@ export default function Skills() {
                   onClick={() => setActiveCategory(cat.id)}
                   className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all text-left ${
                     activeCategory === cat.id
-                      ? 'bg-orange-400/20 text-orange-400 border border-orange-400/30'
+                      ? 'bg-cyan-400/20 text-cyan-400 border border-cyan-400/30'
                       : 'text-gray-400 hover:text-white hover:bg-white/5'
                   }`}
                 >
@@ -131,7 +131,7 @@ export default function Skills() {
             {/* Featured skill */}
             {featured && (
               <div className="mb-8">
-                <p className="text-orange-400 text-sm font-semibold mb-2">{categoryLabel} Favorite</p>
+                <p className="text-cyan-400 text-sm font-semibold mb-2">{categoryLabel} Favorite</p>
                 <h4 className="text-white text-xl font-bold mb-1">{featured.name}</h4>
                 <p className="text-gray-500 text-sm mb-4">{featured.desc}</p>
                 <div className={`bg-gradient-to-br ${featured.color} rounded-xl h-40 flex items-center justify-center`}>
