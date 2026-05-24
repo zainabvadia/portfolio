@@ -1,9 +1,17 @@
 export default function About() {
+  const gradientText = {
+    background: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+    display: 'inline-block'
+  }
+
   const cards = [
     { 
       title: 'Build', 
       desc: 'From idea to deployment, end to end',
-      color: 'border-orange-500/30 bg-orange-500/10',
+      color: 'border-cyan-500/30 bg-cyan-500/10',
       text: 'text-cyan-400'
     },
     { 
@@ -21,11 +29,11 @@ export default function About() {
   ]
 
   const bullets = [
-    '📚 Currently: Building more projects · diving deeper into AI · trying to grind more LeetCode',
-    '🎯 Goals: Land an internship · build more projects · read more · discover new passions',
-    '🎮 Hobbies: Reading · binge watching shows & movies',
-    '⚡ Fun Fact: I\'ve read over 210 books and can do a surprising amount of mental math',
-    '✅ Availability: Open to Fall 2026 internships'
+    { emoji: '📚', label: 'Currently', value: 'Building more projects · diving deeper into AI · trying to grind more LeetCode' },
+    { emoji: '🎯', label: 'Goals', value: 'Land an internship · build more projects · read more · discover new passions' },
+    { emoji: '🎮', label: 'Hobbies', value: 'Reading · binge watching shows & movies' },
+    { emoji: '⚡', label: 'Fun Fact', value: 'I\'ve read over 210 books and can do a surprising amount of mental math' },
+    { emoji: '✅', label: 'Availability', value: 'Open to Fall 2026 internships' },
   ]
 
   return (
@@ -35,38 +43,35 @@ export default function About() {
 
       <div className="grid grid-cols-2 gap-6 mb-6">
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-          <p className="text-gray-500 text-xs tracking-widest uppercase mb-4">/ Bio</p>
-          <p className="text-gray-400 leading-relaxed text-base">
-            Hi, my name is{' '}
-            <span className="text-white font-bold">Zainab</span>. I'm a{' '}
-            <span className="text-white font-bold">Computer Science student</span>
-            {' '}at York University with a passion for{' '}
-            <span className="text-white font-bold">full stack development</span>
-            {' '}and{' '}
-            <span className="text-white font-bold">artificial intelligence</span>
-            . I've built{' '}
-            <span className="text-white font-bold">award-winning projects</span>
-            , won{' '}
-            <span className="text-white font-bold">hackathons</span>
-            , and worked across several different tech stacks. I believe the best developers aren't just coders but are{' '}
-            <span className="text-white font-bold">problem solvers</span>
-            ,{' '}
-            <span className="text-white font-bold">communicators</span>
-            , and{' '}
-            <span className="text-white font-bold">builders</span>
-            . I'm constantly learning, constantly building, and constantly pushing myself to create software that delivers{' '}
-            <span className="text-white font-bold">real impact</span>
-            . Currently seeking{' '}
-            <span className="text-white font-bold">internship opportunities</span>
-            {' '}to bring my skills to a team that's building something meaningful.
+          <p className="text-gray-500 text-l tracking-widest uppercase mb-4">/ Bio</p>
+          <p className="text-white-400 leading-relaxed text-lg">
+            CS student at{' '}
+            <span style={gradientText}>York University</span>
+            {' '}going into my third year. I've won{' '}
+            <span style={gradientText}>two hackathons</span>
+            , built{' '}
+            <span style={gradientText}>AI systems for Pfizer</span>
+            , and shipped products across{' '}
+            <span style={gradientText}>mobile, full stack, and data</span>
+            . Oh, and I've read{' '}
+            <span style={gradientText}>210+ books</span>
+            {' '}because curiosity isn't just something I code with. Currently seeking{' '}
+            <span style={gradientText}>Fall 2026 internships</span>
+            {' '}to build something that actually matters.
           </p>
         </div>
 
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
           <p className="text-gray-500 text-xs tracking-widest uppercase mb-4">/ Quick Facts</p>
-          <ul className="flex flex-col gap-5">
+          <ul className="flex flex-col gap-4">
             {bullets.map((b, i) => (
-              <li key={i} className="text-gray-300 text-base">{b}</li>
+              <li key={i} className="text-gray-300 text-base flex gap-2">
+                <span>{b.emoji}</span>
+                <span>
+                  <span style={gradientText} className="font-semibold">{b.label}:</span>
+                  {' '}{b.value}
+                </span>
+              </li>
             ))}
           </ul>
         </div>
