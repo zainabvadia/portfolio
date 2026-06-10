@@ -1,6 +1,18 @@
 export default function Experience() {
   const experiences = [
     {
+  title: 'Full Stack Software Engineer Intern',
+  company: 'KRAFZEN',
+  date: 'June 2026 – Present',
+  location: 'Remote',
+  bullets: [
+    'Developing and maintaining full stack web applications using React.js, Node.js, and Python to deliver scalable solutions',
+    'Collaborating with a global team to build SaaS products and AI-driven tools for engineering and design workflows',
+    'Participating in code reviews, debugging, and application deployment to ensure stability and smooth release processes'
+  ],
+  tags: ['React.js', 'Node.js', 'Python', 'SaaS', 'AI', 'Full Stack']
+    },
+    {
       title: 'AI/ML Extern',
       company: 'Extern x Pfizer',
       date: 'May 2026 – Present',
