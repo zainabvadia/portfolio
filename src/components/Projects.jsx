@@ -2,8 +2,8 @@ import { FaGithub, FaExternalLinkAlt, FaThumbtack, FaYoutube } from 'react-icons
 
 const projects = [
   {
-    title: 'Packwise',
-    desc: 'AI-powered travel packing companion for iOS and Android. Generates personalized packing lists, enforces airline rules, coordinates group trips, and manages travel documents.',
+    title: 'PackWise',
+    desc: 'AI-powered travel packing companion for iOS and Android. Won 2nd Place at HackThe6ix among 600+ participants. Generates personalized packing lists, enforces 10+ airline compliance rules, and coordinates group trips in real time.',
     tags: ['Flutter', 'Dart', 'Firebase', 'Gemini API', 'Swift', 'C++'],
     github: 'https://github.com/Cool-1-2-3-4-5/Travel-helper',
     live: null,
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: 'JustTalk',
-    desc: 'Full-stack speech analytics platform for real-time communication analysis. Generates transcripts with percentage-based feedback scores for clarity, filler words, and speech consistency.',
+    desc: 'Full-stack speech analytics platform that won Best Use of DigitalOcean at ElleHacks among 200+ participants. Built an AI-powered evaluation pipeline achieving 85-90% transcript accuracy with percentage-based feedback scores.',
     tags: ['TypeScript', 'Next.js', 'Spring Boot', 'PostgreSQL', 'Docker', 'Gemini API'],
     github: 'https://github.com/zainabvadia/JustTalk',
     live: 'https://justtalk-phi.vercel.app/',
@@ -26,6 +26,18 @@ const projects = [
     award: '🏆 Best Use of DigitalOcean — ElleHacks'
   },
   {
+    title: 'PricePulse',
+    desc: 'Canadian inflation insight dashboard visualizing grocery price trends across 100+ products. Features interactive Altair charts, dynamic search, historical price data, and direct store links for non-technical users.',
+    tags: ['Python', 'Streamlit', 'Pandas', 'Altair', 'CSV'],
+    github: 'https://github.com/zainabvadia/PricePulse',
+    live: null,
+    youtube: null,
+    devpost: null,
+    image: '/images/price_pulse.webp',
+    pinned: true,
+    award: null
+  },
+  {
     title: 'LEGO Collection',
     desc: 'Full-stack web application to manage and visualize LEGO collections. Features RESTful APIs, middleware, server-rendered views, and role-based access control with bcrypt authentication.',
     tags: ['Node.js', 'Express', 'MongoDB', 'EJS', 'HTML/CSS'],
@@ -34,24 +46,12 @@ const projects = [
     youtube: null,
     devpost: null,
     image: '/images/lego_collection.png',
-    pinned: true,
-    award: null
-  },
-  {
-    title: 'PricePulse',
-    desc: 'Inflation insight dashboard that visualizes Canadian grocery price trends. Features interactive search, dynamic Altair charts, historical price data, and direct store links.',
-    tags: ['Python', 'Streamlit', 'Pandas', 'Altair', 'CSV'],
-    github: 'https://github.com/zainabvadia/PricePulse',
-    live: null,
-    youtube: null,
-    devpost: null,
-    image: '/images/price_pulse.webp',
     pinned: false,
     award: null
   },
   {
     title: 'Seneca Deliveries',
-    desc: 'C-based delivery routing system that assigns shipments to trucks using capacity constraints and shortest-path routing on a fixed 25x25 grid map. Built for SFT221 Software Testing.',
+    desc: 'C-based delivery routing system that assigns shipments to trucks using capacity constraints and shortest-path routing on a fixed 25x25 grid map.',
     tags: ['C', 'Algorithms', 'Data Structures', 'Unit Testing'],
     github: 'https://github.com/zainabvadia/Seneca_Deliveries',
     live: null,
@@ -135,11 +135,19 @@ export default function Projects() {
   const pinned = projects.filter(p => p.pinned)
   const others = projects.filter(p => !p.pinned)
 
+  const gradientText = {
+    background: 'linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+    display: 'inline-block'
+  }
+
   return (
-    <section id="projects" className="py-12 px-1 max-w-6xl mx-auto scroll-mt-24">
-      <p className="text-gray-500 text-base tracking-widest uppercase mb-3">What I've Built</p>
-      <h2 className="text-2xl font-black mb-4">Projects<span className="text-cyan-400">.</span></h2>
-      <p className="text-gray-500 text-sm mb-8">A mix of hackathon wins, personal projects, and everything in between</p>
+    <section id="projects" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-24">
+      <p className="text-gray-500 text-sm tracking-widest uppercase mb-2">What I've Built</p>
+      <h2 className="text-4xl font-black mb-3">Projects<span style={gradientText}>.</span></h2>
+      <p className="text-gray-500 text-base mb-10">A mix of hackathon wins, personal projects, and everything in between</p>
 
       <div className="flex items-center gap-3 mb-8">
         <FaThumbtack className="text-cyan-400" size={16} />
