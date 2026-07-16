@@ -10,6 +10,17 @@ export default function Hero() {
     display: 'inline-block',
   }
 
+  const marqueeItems = [
+    'PFIZER AI/ML EXTERN',
+    'KRAFZEN SWE INTERN',
+    'YORK UNIVERSITY CS',
+    'OPEN TO FALL 2026 INTERNSHIPS',
+    'SWE & AI',
+    '210+ BOOKS READ',
+    '2x HACKATHON WINNER',
+    'TORONTO, ON',
+  ]
+
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
       <p className="text-gray-400 text-base mb-3 tracking-widest uppercase">
@@ -28,12 +39,12 @@ export default function Hero() {
           color: '#c4b5fd',
         }}
       >
-        CS Student · Full Stack & AI
+        CS Student · SWE & AI · Open to Fall 2026 Internships
       </span>
 
       <div className="text-2xl leading-relaxed mb-10 max-w-2xl text-center">
         <span className="text-gray-400">
-          Computer Science student building{' '}
+          Building{' '}
         </span>
 
         <TypeAnimation
@@ -63,12 +74,15 @@ export default function Hero() {
             ?.scrollIntoView({ behavior: 'smooth' })
         }
         className="text-white font-semibold text-base px-8 py-3 rounded-full transition-all mb-10 hover:opacity-90 hover:scale-105"
-        style={{ background: 'linear-gradient(135deg, #06b6d4, #8b5cf6)' }}
+        style={{
+          background: 'linear-gradient(135deg, #06b6d4, #8b5cf6)',
+        }}
       >
         View My Work →
       </button>
 
-      <div className="flex gap-6">
+      {/* Social Links */}
+      <div className="flex gap-6 mb-12">
         <a
           href="https://github.com/zainabvadia"
           target="_blank"
@@ -94,6 +108,41 @@ export default function Hero() {
           <FaEnvelope size={36} />
         </a>
       </div>
+
+      {/* Marquee ticker */}
+      <div
+        className="w-screen overflow-hidden"
+        style={{
+          maskImage:
+            'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+        }}
+      >
+        <div
+          className="flex gap-8 whitespace-nowrap"
+          style={{ animation: 'marquee 20s linear infinite' }}
+        >
+          {[...marqueeItems, ...marqueeItems].map((item, i) => (
+            <span
+              key={i}
+              className="text-sm tracking-widest text-gray-500 uppercase flex items-center gap-8"
+            >
+              {item}
+              <span style={{ color: '#06b6d4' }}>✦</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <style>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
     </section>
   )
 }
