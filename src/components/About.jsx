@@ -18,7 +18,7 @@ export default function About() {
     { emoji: '🎯', label: 'Goals', value: 'Land an internship · build more projects · read more · discover new passions' },
     { emoji: '🎮', label: 'Hobbies', value: 'Reading · binge watching shows & movies' },
     { emoji: '⚡', label: 'Fun Fact', value: 'I\'ve read over 210 books and can do a surprising amount of mental math' },
-    { emoji: '✅', label: 'Availability', value: 'Open to Fall 2026 internships' },
+    { emoji: '✅', label: 'Availability', value: 'Open to Winter 2027 internships' },
   ]
 
   return (

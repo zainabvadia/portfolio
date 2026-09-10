@@ -39,7 +39,7 @@ export default function Hero() {
           color: '#c4b5fd',
         }}
       >
-        CS Student · SWE & AI/ML · Open to Fall 2026 Internships
+        CS Student · SWE & AI/ML · Open to Winter 2027 Internships
       </span>
 
       <div className="text-lg md:text-2xl leading-relaxed mb-10 max-w-2xl text-center">
