@@ -15,7 +15,7 @@ export default function Hero() {
     'PFIZER AI/ML EXTERN',
     'KRAFZEN SWE INTERN',
     'YORK UNIVERSITY CS',
-    'OPEN TO FALL 2026 INTERNSHIPS',
+    'OPEN TO WINTER 2027 INTERNSHIPS',
     'SWE & AI',
     '210+ BOOKS READ',
     '2x HACKATHON WINNER',
@@ -42,35 +42,10 @@ export default function Hero() {
           color: '#c4b5fd',
         }}
       >
-        CS Student · SWE & AI · Open to Fall 2026 Internships
+        CS Student · SWE & AI · Open to Winter 2027 Internships
       </span>
 
-      <div className="text-2xl leading-relaxed mb-10 max-w-2xl text-center">
-        <span className="text-gray-400">Building </span>
-
-        <TypeAnimation
-          sequence={[
-            'AI systems',
-            2000,
-            'full stack products',
-            2000,
-            'web applications',
-            2000,
-            'real world solutions',
-            2000,
-            'things that matter',
-            2000,
-          ]}
-          wrapper="span"
-          speed={50}
-          repeat={Infinity}
-          style={{
-            ...gradientText,
-            fontWeight: 600,
-          }}
-        />
-      </div>
-
+        
       <button
         onClick={() =>
           document
