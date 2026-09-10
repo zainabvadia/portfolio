@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
-import FloatingCodeBg from './FloatingCodeBg'
+import FloatingCodebg from './FloatingCodebg'
 
 export default function Hero() {
   const gradientText = {
@@ -24,7 +24,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex flex-col text-center px-6 overflow-hidden">
-      <FloatingCodeBg />
+      <FloatingCodebg />
 
       <div className="flex-1 flex flex-col justify-center items-center">
         <p className="text-gray-400 text-base mb-2 tracking-widest uppercase">
