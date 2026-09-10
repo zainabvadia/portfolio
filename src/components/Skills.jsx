@@ -86,7 +86,6 @@ export default function Skills() {
 
   return (
     <section id="skills" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-24">
-      <p className="text-gray-500 text-xs tracking-widest uppercase mb-2">What I Know</p>
       <h2 className="text-3xl font-black mb-6">Skills<span style={gradientText}>.</span></h2>
 
       <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden">
