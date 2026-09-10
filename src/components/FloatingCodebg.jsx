@@ -7,7 +7,7 @@ const lines = [
   "while (learning) { keepGoing(); }",
   "console.log('hire me maybe');",
   "git commit -m 'it works, dont ask how'",
-  "// 210 books read, 0 regrets",
+  "// bug fixed itself, never speak of it again",
   "for (let i = 0; i < hackathons; i++) { win(); }",
 ]
 
@@ -25,9 +25,11 @@ export default function FloatingCodeBg() {
       const el = document.createElement('div')
       el.textContent = text
       el.style.position = 'absolute'
-      el.style.left = i % 2 === 0
-        ? `${2 + Math.random() * 13}%`
-        : `${80 + Math.random() * 13}%`
+      if (i % 2 === 0) {
+        el.style.left = `${2 + Math.random() * 13}%`
+      } else {
+        el.style.right = `${2 + Math.random() * 13}%`
+      }
       el.style.fontFamily = 'monospace'
       el.style.fontSize = '13px'
       el.style.fontWeight = '600'
