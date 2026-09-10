@@ -17,7 +17,6 @@ export default function Education() {
 
   return (
     <section id="education" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-24">
-      <p className="text-gray-500 text-sm tracking-widest uppercase mb-2">My Background</p>
       <h2 className="text-4xl font-black mb-10">Education<span style={gradientText}>.</span></h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">

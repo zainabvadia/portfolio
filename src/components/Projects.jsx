@@ -145,9 +145,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-24">
-      <p className="text-gray-500 text-sm tracking-widest uppercase mb-2">What I've Built</p>
       <h2 className="text-4xl font-black mb-3">Projects<span style={gradientText}>.</span></h2>
-      <p className="text-gray-500 text-base mb-10">A mix of hackathon wins, personal projects, and everything in between</p>
 
       <div className="flex items-center gap-3 mb-8">
         <FaThumbtack className="text-cyan-400" size={16} />

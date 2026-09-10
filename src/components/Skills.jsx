@@ -7,7 +7,7 @@ import {
 import {
   SiTypescript, SiNextdotjs, SiTailwindcss, SiSpringboot,
   SiPostgresql, SiMongodb, SiGooglecloud,
-  SiVercel, SiFlutter, SiDart, SiExpress, SiFastapi,
+  SiVercel, SiExpress, SiFastapi,
   SiJira, SiFirebase, SiCplusplus, SiMysql
 } from 'react-icons/si'
 
@@ -18,7 +18,6 @@ const categories = [
   { id: 'backend', label: 'Backend', icon: '⚙' },
   { id: 'database', label: 'Database', icon: '🗄' },
   { id: 'tools', label: 'Tools', icon: '🔧' },
-  { id: 'mobile', label: 'Mobile', icon: '📱' },
   { id: 'soft', label: 'Soft Skills', icon: '🤝' },
 ]
 
@@ -30,7 +29,6 @@ const skills = [
   { name: 'Java', desc: 'Backend development with Spring Boot and REST APIs', icon: <FaJava size={22} color="#f89820" />, category: 'languages', color: 'from-orange-500 to-orange-700' },
   { name: 'C/C++', desc: 'Systems programming and algorithm implementation', icon: <SiCplusplus size={22} color="#00599c" />, category: 'languages', color: 'from-blue-600 to-blue-800' },
   { name: 'SQL', desc: 'Database querying and management across multiple systems', icon: <FaDatabase size={22} color="#336791" />, category: 'languages', color: 'from-gray-500 to-gray-700' },
-  { name: 'Dart', desc: 'Primary language for Flutter mobile development', icon: <SiDart size={22} color="#0175c2" />, category: 'languages', color: 'from-blue-400 to-blue-600' },
   { name: 'HTML/CSS', desc: 'Markup and styling for modern web interfaces', icon: <FaHtml5 size={22} color="#e34f26" />, category: 'languages', color: 'from-orange-400 to-orange-600' },
 
   // Frontend
@@ -58,10 +56,6 @@ const skills = [
   { name: 'Google Cloud', desc: 'Cloud infrastructure for scalable app deployment', icon: <SiGooglecloud size={22} color="#4285f4" />, category: 'tools', color: 'from-blue-400 to-blue-600' },
   { name: 'Vercel', desc: 'Deployment platform for frontend and full-stack apps', icon: <SiVercel size={22} color="#ffffff" />, category: 'tools', color: 'from-gray-600 to-gray-800' },
   { name: 'Jira', desc: 'Project management and issue tracking for team workflows', icon: <SiJira size={22} color="#0052cc" />, category: 'tools', color: 'from-blue-600 to-blue-800' },
-
-  // Mobile
-  { name: 'Flutter', desc: 'Cross-platform mobile development for iOS and Android', icon: <SiFlutter size={22} color="#02569b" />, category: 'mobile', color: 'from-blue-500 to-blue-700', favorite: true },
-  { name: 'Dart', desc: 'Primary language powering Flutter applications', icon: <SiDart size={22} color="#0175c2" />, category: 'mobile', color: 'from-blue-400 to-blue-600' },
 
   // Soft Skills
   { name: 'Communication', desc: 'Clear written and verbal communication across teams', icon: <FaComments size={22} color="#a855f7" />, category: 'soft', color: 'from-purple-500 to-purple-700', favorite: true },
