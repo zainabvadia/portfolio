@@ -8,24 +8,9 @@ export default function About() {
   }
 
   const cards = [
-    { 
-      title: 'Build', 
-      desc: 'From idea to deployment, end to end',
-      color: 'border-cyan-500/30 bg-cyan-500/10',
-      text: 'text-cyan-400'
-    },
-    { 
-      title: 'Learn', 
-      desc: 'Obsessively curious, always leveling up',
-      color: 'border-blue-500/30 bg-blue-500/10',
-      text: 'text-blue-400'
-    },
-    { 
-      title: 'Impact', 
-      desc: 'Technology should make lives better',
-      color: 'border-purple-500/30 bg-purple-500/10',
-      text: 'text-purple-400'
-    }
+    { title: 'Build', desc: 'From idea to deployment, end to end', color: 'border-cyan-500/30 bg-cyan-500/10', text: 'text-cyan-400' },
+    { title: 'Learn', desc: 'Obsessively curious, always leveling up', color: 'border-blue-500/30 bg-blue-500/10', text: 'text-blue-400' },
+    { title: 'Impact', desc: 'Technology should make lives better', color: 'border-purple-500/30 bg-purple-500/10', text: 'text-purple-400' }
   ]
 
   const bullets = [
@@ -41,10 +26,10 @@ export default function About() {
       <p className="text-gray-500 text-xs tracking-widest uppercase mb-2">Who I Am</p>
       <h2 className="text-3xl font-black mb-10">About Me</h2>
 
-      <div className="grid grid-cols-2 gap-6 mb-6">
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-          <p className="text-gray-500 text-l tracking-widest uppercase mb-4">/ Bio</p>
-          <p className="text-white-400 leading-relaxed text-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
+          <p className="text-gray-500 text-xs tracking-widest uppercase mb-4">/ Bio</p>
+          <p className="text-white leading-relaxed text-base md:text-lg">
             CS student at{' '}
             <span style={gradientText}>York University</span>
             {' '}going into my third year. I've won{' '}
@@ -61,11 +46,11 @@ export default function About() {
           </p>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 md:p-8">
           <p className="text-gray-500 text-xs tracking-widest uppercase mb-4">/ Quick Facts</p>
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-3 md:gap-4">
             {bullets.map((b, i) => (
-              <li key={i} className="text-gray-300 text-base flex gap-2">
+              <li key={i} className="text-gray-300 text-sm md:text-base flex gap-2">
                 <span>{b.emoji}</span>
                 <span>
                   <span style={gradientText} className="font-semibold">{b.label}:</span>
@@ -77,11 +62,11 @@ export default function About() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
         {cards.map((card) => (
-          <div key={card.title} className={`backdrop-blur-sm border rounded-2xl p-8 ${card.color}`}>
+          <div key={card.title} className={`backdrop-blur-sm border rounded-2xl p-6 md:p-8 ${card.color}`}>
             <p className={`text-xs tracking-widest uppercase font-semibold mb-3 ${card.text}`}>{card.title}</p>
-            <p className="text-gray-300 text-base">{card.desc}</p>
+            <p className="text-gray-300 text-sm md:text-base">{card.desc}</p>
           </div>
         ))}
       </div>

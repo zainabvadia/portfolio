@@ -102,14 +102,14 @@ export default function Skills() {
           <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
         </div>
 
-        <div className="flex">
-          <div className="w-44 border-r border-white/10 p-3 shrink-0">
-            <div className="bg-white/5 border border-white/10 rounded-lg px-3 py-1.5 mb-4 flex items-center gap-2">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-44 border-b md:border-b-0 md:border-r border-white/10 p-3 shrink-0">
+            <div className="bg-white/5 border border-white/10 rounded-lg px-3 py-1.5 mb-3 flex items-center gap-2">
               <span className="text-gray-500 text-xs">🔍</span>
               <span className="text-gray-600 text-xs">Search</span>
             </div>
             <p className="text-gray-600 text-xs tracking-widest uppercase mb-2">Categories</p>
-            <div className="flex flex-col gap-0.5">
+            <div className="flex flex-row flex-wrap md:flex-col gap-1">
               {categories.map(cat => (
                 <button
                   key={cat.id}
@@ -148,7 +148,7 @@ export default function Skills() {
             )}
 
             <p className="text-white text-xs font-bold mb-2">{categoryLabel} Skills</p>
-            <div className="grid grid-cols-2 gap-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-0">
               {filtered.map((skill, i) => (
                 <div key={i} className="flex items-start gap-2 p-2.5 border-b border-white/5 hover:bg-white/5 transition-colors">
                   <div className="mt-0.5 shrink-0">{skill.icon}</div>

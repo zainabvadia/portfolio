@@ -15,7 +15,7 @@ export default function Hero() {
     'KRAFZEN SWE INTERN',
     'YORK UNIVERSITY CS',
     'OPEN TO FALL 2026 INTERNSHIPS',
-    'SWE & AI',
+    'SWE & AI/ML',
     '210+ BOOKS READ',
     '2x HACKATHON WINNER',
     'TORONTO, ON',
@@ -23,30 +23,27 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
-      <p className="text-gray-400 text-base mb-3 tracking-widest uppercase">
+      <p className="text-gray-400 text-sm md:text-base mb-3 tracking-widest uppercase">
         Hey, I'm
       </p>
 
-      <h2 className="text-8xl font-black mb-5 tracking-tight uppercase">
+      <h2 className="text-5xl sm:text-6xl md:text-8xl font-black mb-5 tracking-tight uppercase">
         Zainab Vadia
       </h2>
 
       <span
-        className="border text-base px-5 py-2 rounded-full mb-8"
+        className="border text-xs md:text-base px-4 md:px-5 py-2 rounded-full mb-8 text-center"
         style={{
           borderColor: '#8b5cf6',
           backgroundColor: 'rgba(139, 92, 246, 0.1)',
           color: '#c4b5fd',
         }}
       >
-        CS Student · SWE & AI · Open to Fall 2026 Internships
+        CS Student · SWE & AI/ML · Open to Fall 2026 Internships
       </span>
 
-      <div className="text-2xl leading-relaxed mb-10 max-w-2xl text-center">
-        <span className="text-gray-400">
-          Building{' '}
-        </span>
-
+      <div className="text-lg md:text-2xl leading-relaxed mb-10 max-w-2xl text-center">
+        <span className="text-gray-400">Building </span>
         <TypeAnimation
           sequence={[
             'AI systems',
@@ -69,19 +66,14 @@ export default function Hero() {
 
       <button
         onClick={() =>
-          document
-            .getElementById('projects')
-            ?.scrollIntoView({ behavior: 'smooth' })
+          document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
         }
-        className="text-white font-semibold text-base px-8 py-3 rounded-full transition-all mb-10 hover:opacity-90 hover:scale-105"
-        style={{
-          background: 'linear-gradient(135deg, #06b6d4, #8b5cf6)',
-        }}
+        className="text-white font-semibold text-sm md:text-base px-6 md:px-8 py-3 rounded-full transition-all mb-10 hover:opacity-90 hover:scale-105"
+        style={{ background: 'linear-gradient(135deg, #06b6d4, #8b5cf6)' }}
       >
         View My Work →
       </button>
 
-      {/* Social Links */}
       <div className="flex gap-6 mb-12">
         <a
           href="https://github.com/zainabvadia"
@@ -89,32 +81,28 @@ export default function Hero() {
           rel="noopener noreferrer"
           className="text-white hover:text-cyan-400 transition-all hover:scale-110 transform"
         >
-          <FaGithub size={36} />
+          <FaGithub size={30} />
         </a>
-
         <a
           href="https://linkedin.com/in/zainabvadia"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-cyan-400 transition-all hover:scale-110 transform"
         >
-          <FaLinkedin size={36} />
+          <FaLinkedin size={30} />
         </a>
-
         <a
           href="mailto:zmvadia@my.yorku.ca"
           className="text-white hover:text-cyan-400 transition-all hover:scale-110 transform"
         >
-          <FaEnvelope size={36} />
+          <FaEnvelope size={30} />
         </a>
       </div>
 
-      {/* Marquee ticker */}
       <div
-        className="w-screen overflow-hidden"
+        className="w-full overflow-hidden"
         style={{
-          maskImage:
-            'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+          maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
         }}
       >
         <div
@@ -124,7 +112,7 @@ export default function Hero() {
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
             <span
               key={i}
-              className="text-sm tracking-widest text-gray-500 uppercase flex items-center gap-8"
+              className="text-xs md:text-sm tracking-widest text-gray-500 uppercase flex items-center gap-8"
             >
               {item}
               <span style={{ color: '#06b6d4' }}>✦</span>
@@ -135,12 +123,8 @@ export default function Hero() {
 
       <style>{`
         @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
       `}</style>
     </section>
