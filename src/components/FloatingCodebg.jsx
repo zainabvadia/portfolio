@@ -3,10 +3,12 @@ import { useEffect, useRef } from 'react'
 const lines = [
   "// currently compiling: sleep schedule",
   "const coffee = new Coffee(); coffee.refill();",
-  "if (gpa === 4.0) { flex = true; }",
   "status: open_to_internships = true;",
   "while (learning) { keepGoing(); }",
   "console.log('hire me maybe');",
+  "git commit -m 'it works, dont ask how'",
+  "// 210 books read, 0 regrets",
+  "for (let i = 0; i < hackathons; i++) { win(); }",
 ]
 
 const palette = ['#06b6d4', '#8b5cf6']
@@ -33,7 +35,7 @@ export default function FloatingCodeBg() {
       wrap.appendChild(el)
       return {
         el,
-        y: (safeHeight / lines.length) * i * 1.6,
+        y: (safeHeight / lines.length) * i,
         speed: 0.2 + Math.random() * 0.15,
         color: palette[i % palette.length],
       }
@@ -42,8 +44,8 @@ export default function FloatingCodeBg() {
     let frameId
     const tick = () => {
       items.forEach((item) => {
-        item.y -= item.speed
-        if (item.y < -30) item.y = safeHeight + 30
+        item.y += item.speed
+        if (item.y > safeHeight + 30) item.y = -30
         item.el.style.top = `${item.y}px`
         const fade = Math.min(item.y / 60, (safeHeight - item.y) / 150, 1)
         item.el.style.opacity = Math.max(fade, 0) * 0.6
