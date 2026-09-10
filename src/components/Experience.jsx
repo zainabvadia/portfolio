@@ -48,7 +48,6 @@ export default function Experience() {
   return (
     <section id="experience" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-24">
       <h2 className="text-3xl md:text-4xl font-black mb-3">Experience<span style={gradientText}>.</span></h2>
-      <p className="text-gray-500 text-base mb-8">My professional journey</p>
 
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-px bg-gray-800" />
