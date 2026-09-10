@@ -23,7 +23,6 @@ export default function About() {
 
   return (
     <section id="about" className="py-16 px-6 max-w-6xl mx-auto scroll-mt-24">
-      <p className="text-gray-500 text-xs tracking-widest uppercase mb-2">Who I Am</p>
       <h2 className="text-3xl font-black mb-10">About Me</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
