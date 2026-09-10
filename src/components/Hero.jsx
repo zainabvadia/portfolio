@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
-import FloatingCodeBg from './FloatingCodebg'
+import FloatingCodebg from './FloatingCodebg'
 
 export default function Hero() {
   const gradientText = {
@@ -26,16 +26,10 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
       <FloatingCodeBg />
 
-      {/* Intro */}
-      <p className="text-gray-400 text-base mb-3 tracking-widest uppercase">
-        Hey, I'm
-      </p>
-
       <h2 className="text-8xl font-black mb-5 tracking-tight uppercase">
         Zainab Vadia
       </h2>
 
-      {/* Subtitle */}
       <span
         className="border text-base px-5 py-2 rounded-full mb-8"
         style={{
@@ -47,9 +41,10 @@ export default function Hero() {
         CS Student · SWE & AI · Open to Fall 2026 Internships
       </span>
 
-      {/* Animated Description */}
       <div className="text-2xl leading-relaxed mb-10 max-w-2xl text-center">
-        <span className="text-gray-400">Building </span>
+        <span className="text-gray-400">
+          Building{' '}
+        </span>
 
         <TypeAnimation
           sequence={[
@@ -67,14 +62,10 @@ export default function Hero() {
           wrapper="span"
           speed={50}
           repeat={Infinity}
-          style={{
-            ...gradientText,
-            fontWeight: 600,
-          }}
+          style={{ ...gradientText, fontWeight: 600 }}
         />
       </div>
 
-      {/* View Projects Button */}
       <button
         onClick={() =>
           document
@@ -91,53 +82,43 @@ export default function Hero() {
 
       {/* Social Links */}
       <div className="flex gap-6 mb-12">
-        {/* GitHub */}
         <a
           href="https://github.com/zainabvadia"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-cyan-400 transition-all hover:scale-110 transform"
-          aria-label="GitHub"
         >
           <FaGithub size={36} />
         </a>
 
-        {/* LinkedIn */}
-        <a
+        <a>
           href="https://linkedin.com/in/zainabvadia"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-cyan-400 transition-all hover:scale-110 transform"
-          aria-label="LinkedIn"
         >
           <FaLinkedin size={36} />
         </a>
 
-        {/* Email */}
-        <a
+        <a>
           href="mailto:zmvadia@my.yorku.ca"
           className="text-white hover:text-cyan-400 transition-all hover:scale-110 transform"
-          aria-label="Email"
         >
           <FaEnvelope size={36} />
         </a>
       </div>
 
-      {/* Marquee Ticker */}
+      {/* Marquee ticker */}
       <div
         className="w-screen overflow-hidden"
         style={{
           maskImage:
             'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-          WebkitMaskImage:
-            'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
         }}
       >
         <div
           className="flex gap-8 whitespace-nowrap"
-          style={{
-            animation: 'marquee 20s linear infinite',
-          }}
+          style={{ animation: 'marquee 20s linear infinite' }}
         >
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
             <span
@@ -151,13 +132,11 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Marquee Animation */}
       <style>{`
         @keyframes marquee {
           0% {
             transform: translateX(0);
           }
-
           100% {
             transform: translateX(-50%);
           }

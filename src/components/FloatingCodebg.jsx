@@ -18,22 +18,42 @@ export default function FloatingCodeBg() {
 
   useEffect(() => {
     const wrap = wrapRef.current
-    const els = lines.map((text, i) => {
+    const height = wrap.clientHeight
+
+    const items = lines.map((text, i) => {
       const el = document.createElement('div')
       el.textContent = text
       el.style.position = 'absolute'
-      el.style.left = `${5 + Math.random() * 70}%`
-      el.style.top = '110%'
+      el.style.left = `${5 + ((i * 37) % 70)}%`
       el.style.fontFamily = 'monospace'
-      el.style.fontSize = '12px'
-      el.style.color = 'rgba(255,255,255,0.18)'
+      el.style.fontSize = '13px'
       el.style.whiteSpace = 'nowrap'
-      el.style.animation = `floatUp ${14 + Math.random() * 10}s linear infinite`
-      el.style.animationDelay = `${-i * 2.2}s`
       wrap.appendChild(el)
-      return el
+      return {
+        el,
+        y: (height / lines.length) * i,
+        speed: 0.25 + Math.random() * 0.2,
+      }
     })
-    return () => els.forEach((el) => el.remove())
+
+    let frameId
+    const tick = () => {
+      items.forEach((item) => {
+        item.y -= item.speed
+        if (item.y < -30) item.y = height + 30
+        item.el.style.top = `${item.y}px`
+        const fade = Math.min(item.y / 60, (height - item.y) / 150, 1)
+        item.el.style.opacity = Math.max(fade, 0) * 0.5
+        item.el.style.color = 'rgba(148, 210, 255, 1)'
+      })
+      frameId = requestAnimationFrame(tick)
+    }
+    tick()
+
+    return () => {
+      cancelAnimationFrame(frameId)
+      items.forEach((item) => item.el.remove())
+    }
   }, [])
 
   return (
